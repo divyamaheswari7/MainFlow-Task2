@@ -37,13 +37,16 @@ main {
 section {
     margin-bottom: 20px;
 }
-section#home, section#about, section#contact {
-    font-size: 1.125rem; 
+#home{
+    font-size: 20px;
+}
+#about{
+    font-size: 20px;
+}
+#contact {
+    font-size: 20px; 
 }
 
-#home p, #about p, #contact p {
-    margin: 0.5em 0;
-}
 #p1{
     font-family: 'Poppins', monospace;
 }
@@ -72,17 +75,15 @@ footer {
 }
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        flex-direction: wrap;
     }
     
     nav a {
-        margin: 10px 0;
+        margin: 5px 10px;
         font-size: 1rem;
     }
     
-    main {
-        padding: 15px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -102,7 +103,7 @@ footer {
         font-size: 0.9rem;
     }
     footer {
-        padding: 0.5em;
+        padding: 0.5em 0;
     }
 
     section {
