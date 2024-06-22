@@ -1,0 +1,111 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+nav {
+    background-color: darkmagenta;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    background-color: lightseagreen;
+}
+section {
+    margin-bottom: 20px;
+}
+section#home, section#about, section#contact {
+    font-size: 1.125rem; 
+}
+
+#home p, #about p, #contact p {
+    margin: 0.5em 0;
+}
+#p1{
+    font-family: 'Poppins', monospace;
+}
+#p2{
+    font-family: 'Pacifico', cursive;
+}
+#p3{
+    font-family: 'Verdana', sans-serif;
+}
+#p4{
+    font-family: 'Georgia', serif;
+}
+#p5{
+    font-family: 'Arial', sans-serif;
+}
+#p6{
+    font-family: 'Monaco', monospace;
+}
+footer {
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav a {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+    nav{
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    nav a {
+        margin: 5px 10px; 
+        font-size: 0.9rem;
+    }
+    footer {
+        padding: 0.5em;
+    }
+
+    section {
+        margin-bottom: 1em;
+    }
+}
